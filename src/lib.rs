@@ -410,10 +410,21 @@ fn find_vcpkg_target(cfg: &Config, target_triplet: &TargetTriplet) -> Result<Vcp
     let vcpkg_root = try!(find_vcpkg_root(&cfg));
     try!(validate_vcpkg_root(&vcpkg_root));
 
+
+
     let mut base = cfg
         .vcpkg_installed_root
         .clone()
-        .or(env::var_os("VCPKG_INSTALLED_ROOT").map(PathBuf::from))
+        .or_else(|| {
+            env::var_os("VCPKG_INSTALLED_ROOT").map(|path| {
+                let path_buf = PathBuf::from(path);
+                if path_buf.is_absolute() {
+                    path_buf
+                } else {
+                    fs::canonicalize(path_buf).unwrap_or_else(|_| vcpkg_root.join("installed"))
+                }
+            })
+        })
         .unwrap_or(vcpkg_root.join("installed"));
 
     let status_path = base.join("vcpkg");
