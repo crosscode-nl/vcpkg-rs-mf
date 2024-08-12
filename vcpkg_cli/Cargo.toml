@@ -12,5 +12,5 @@ found by the vcpkg Cargo build helper.
 keywords = ["build-dependencies"]
 
 [dependencies]
-vcpkg_rs_mf = { version = "0.3.0", path = "../" }
+vcpkg_rs_mf = { version = "0.3.1", path = "../" }
 clap = "2.31"
