@@ -1,10 +1,10 @@
 [package]
-name = "vcpkg_cli"
-version = "0.2.4"
-authors = ["Jim McGrath <jimmc2@gmail.com>"]
+name = "vcpkg_cli_mf"
+version = "0.1.0"
+authors = ["Jim McGrath <jimmc2@gmail.com>","Patrick Vollebregt <patrick@crosscode.nl>"]
 license = "MIT/Apache-2.0"
-repository = "https://github.com/mcgoo/vcpkg-rs"
-documentation = "https://docs.rs/vcpkg"
+repository = "https://github.com/crosscode-nl/vcpkg-rs-mf"
+documentation = "https://docs.rs/vcpkg-rs-mf"
 description = """
 A command line utility to investigate which libraries will be
 found by the vcpkg Cargo build helper.
@@ -12,5 +12,5 @@ found by the vcpkg Cargo build helper.
 keywords = ["build-dependencies"]
 
 [dependencies]
-vcpkg = { version = "0.2.8", path = "../" }
+vcpkg-rs-mf = { version = "0.1.0", path = "../" }
 clap = "2.31"
