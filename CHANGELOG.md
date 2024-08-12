@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) as implemented by Cargo.
 
+##  [0.3.0] - 2024-08-12
+
+### Added
+
+* VCPKG_INSTALLED_ROOT support
+* WASM support
+
+
 ## [0.2.15] - 2021-06-19
 
 ### Changed

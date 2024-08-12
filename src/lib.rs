@@ -9,14 +9,14 @@
 //!
 //! ```rust,no_run
 //! // build.rs
-//! vcpkg::find_package("libssh2").unwrap();
+//! vcpkg_rs_mf::find_package("libssh2").unwrap();
 //! ```
 //!
 //! The cargo metadata that is emitted can be changed like this :-
 //!
 //! ```rust,no_run
 //! // build.rs
-//! vcpkg::Config::new()
+//! vcpkg_rs_mf::Config::new()
 //!     .emit_includes(true)
 //!     .find_package("zlib").unwrap();
 //! ```

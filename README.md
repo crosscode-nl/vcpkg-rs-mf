@@ -11,7 +11,7 @@ Find the library named `foo` in a [Vcpkg](https://github.com/Microsoft/vcpkg) in
 ```rust
 // build.rs
 fn main() {
-    vcpkg::find_package("foo").unwrap();
+    vcpkg_rs_mf::find_package("foo").unwrap();
 }
 ```
 

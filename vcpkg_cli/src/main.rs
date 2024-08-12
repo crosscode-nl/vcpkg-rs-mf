@@ -1,5 +1,5 @@
 extern crate clap;
-extern crate vcpkg;
+extern crate vcpkg_mf_rs;
 
 use clap::{App, AppSettings, Arg, SubCommand};
 use std::env;
@@ -43,7 +43,7 @@ fn main() {
     if let Some(matches) = matches.subcommand_matches("probe") {
         let lib_name = matches.value_of("package").unwrap();
 
-        let mut cfg = vcpkg::Config::new();
+        let mut cfg = vcpkg_rs_mf::Config::new();
         cfg.cargo_metadata(false);
         cfg.copy_dlls(false);
         if let Some(linkage) = matches.value_of("linkage") {
