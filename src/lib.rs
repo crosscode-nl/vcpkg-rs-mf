@@ -421,7 +421,7 @@ fn find_vcpkg_target(cfg: &Config, target_triplet: &TargetTriplet) -> Result<Vcp
                 if path_buf.is_absolute() {
                     path_buf
                 } else {
-                    fs::canonicalize(path_buf).unwrap_or_else(|_| vcpkg_root.join("installed"))
+                    dunce::canonicalize(path_buf).unwrap_or_else(|_| vcpkg_root.join("installed"))
                 }
             })
         })

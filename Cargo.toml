@@ -1,6 +1,6 @@
 [package]
 name = "vcpkg_rs_mf"
-version = "0.3.1"
+version = "0.3.2"
 authors = ["Jim McGrath <jimmc2@gmail.com>","Patrick Vollebregt <patrick@crosscode.nl>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/crosscode-nl/vcpkg-rs-mf"
@@ -14,8 +14,9 @@ keywords = ["build-dependencies", "windows", "macos", "linux"]
 categories = ["development-tools::build-utils"]
 
 [dependencies]
+dunce = "1.0.5"
 
 [dev-dependencies]
 tempfile = "3"
 lazy_static = "1"
-
+dunce = "1.0.5"

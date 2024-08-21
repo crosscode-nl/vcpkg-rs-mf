@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) as implemented by Cargo.
 
+## [0.3.2] - 2024-08-21
+
+### Fixed
+
+* Fix UNC/extended length path issues for absolute VCPKG_INSTALLED_ROOT. UNC not support forward slashes making it impossible to find nested header files. 
+
 ## [0.3.1] - 2024-08-12
 
 ### Fixed
