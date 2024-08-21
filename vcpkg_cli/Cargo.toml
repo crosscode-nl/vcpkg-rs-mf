@@ -1,6 +1,6 @@
 [package]
 name = "vcpkg_cli_mf"
-version = "0.3.0"
+version = "0.3.2"
 authors = ["Jim McGrath <jimmc2@gmail.com>","Patrick Vollebregt <patrick@crosscode.nl>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/crosscode-nl/vcpkg-rs-mf"
@@ -12,5 +12,5 @@ found by the vcpkg Cargo build helper.
 keywords = ["build-dependencies"]
 
 [dependencies]
-vcpkg_rs_mf = { version = "0.3.1", path = "../" }
+vcpkg_rs_mf = { version = "0.3.2", path = "../" }
 clap = "2.31"
