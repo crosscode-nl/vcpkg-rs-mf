@@ -3,8 +3,8 @@ name: Linux
 on:
   push:
   pull_request:
-  schedule:
-    - cron: "35 2 * * *"
+#  schedule:
+#    - cron: "35 2 * * *"
 
 jobs:
   build:

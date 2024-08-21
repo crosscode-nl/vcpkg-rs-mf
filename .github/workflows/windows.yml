@@ -3,8 +3,8 @@ name: Windows
 on:
   push:
   pull_request:
-  schedule:
-    - cron: "35 7 * * *" # UTC
+#  schedule:
+#    - cron: "35 7 * * *" # UTC
 
 jobs:
   build:
